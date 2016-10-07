@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student.calculator.MainActivity">
+
+    <TextView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/displayText"
+        android:layout_gravity="end"
+        />
+
+    <GridLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayText"
+        android:orientation="horizontal"
+        android:columnCount="4"
+        android:layout_alignParentBottom="true"
+        android:rowCount="4"
+        android:paddingBottom="10dp">
+        <Button
+            android:text="7"
+            android:onClick="addItem"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+        <Button
+            android:text="8"
+            android:onClick="addItem"
+            android:layout_rowWeight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="addItem"
+            android:text="9"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="addItem"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="/"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="addItem"
+            android:text="6"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="addItem"
+            android:text="5"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="addItem"
+            android:text="4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="x"
+            android:onClick="addItem"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="3"
+            android:onClick="addItem"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="2"
+            android:onClick="addItem"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="1"
+            android:onClick="addItem"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_rowWeight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="-"
+            android:layout_rowWeight="1"
+            android:onClick="addItem"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="C"
+            android:layout_rowWeight="1"
+            android:onClick="clearLast"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="0"
+            android:layout_rowWeight="1"
+            android:onClick="addItem"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="="
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_rowWeight="1"
+            android:onClick="giveOutput"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="+"
+            android:layout_rowWeight="1"
+            android:onClick="addItem"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+</RelativeLayout>
